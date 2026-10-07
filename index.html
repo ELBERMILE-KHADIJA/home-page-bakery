@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duja Bakery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Reusable pastry illustrations -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="croissant" viewBox="0 0 200 140">
+      <path d="M20 95 Q10 60 45 45 L70 70Z" fill="#D98A45"/>
+      <path d="M180 95 Q190 60 155 45 L130 70Z" fill="#D98A45"/>
+      <path d="M45 45 Q75 15 100 20 Q125 15 155 45 L130 70 L70 70Z" fill="#E7A25B"/>
+      <path d="M62 108 Q40 100 38 78 L70 70 L100 118Z" fill="#E7A25B"/>
+      <path d="M138 108 Q160 100 162 78 L130 70 L100 118Z" fill="#E7A25B"/>
+      <path d="M70 70 L130 70 L100 118Z" fill="#F2B772"/>
+      <path d="M75 30 L88 68M100 22 L100 68M125 30 L112 68" stroke="#C47A35" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="82" cy="40" rx="10" ry="4" fill="#fff" opacity=".35" transform="rotate(-20 82 40)"/>
+    </symbol>
+    <symbol id="cupcake" viewBox="0 0 160 190">
+      <path d="M32 100 L46 175 Q80 188 114 175 L128 100Z" fill="#E58AA6"/>
+      <path d="M52 100 L60 178M80 100 L80 184M108 100 L100 178" stroke="#CF6F8C" stroke-width="3"/>
+      <path d="M25 102 Q15 72 45 68 Q40 40 70 42 Q80 15 105 38 Q135 35 130 68 Q150 78 135 102Z" fill="#FFD6E2"/>
+      <path d="M40 90 Q80 105 120 90" stroke="#F8B4C9" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M52 68 Q80 80 108 66" stroke="#F8B4C9" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <circle cx="92" cy="22" r="13" fill="#C0392B"/>
+      <path d="M92 10 Q96 0 106 -2" stroke="#4A7C3A" stroke-width="3" fill="none"/>
+      <circle cx="60" cy="58" r="3" fill="#fff"/><circle cx="110" cy="70" r="3" fill="#FFE27A"/><circle cx="75" cy="85" r="3" fill="#7AC7FF"/>
+    </symbol>
+    <symbol id="donut" viewBox="0 0 180 180">
+      <circle cx="90" cy="90" r="80" fill="#E3A15C"/>
+      <circle cx="90" cy="86" r="76" fill="#7A4430"/>
+      <path d="M90 12 Q130 10 158 50 Q172 85 150 128 Q120 168 80 164 Q40 160 22 120 Q8 80 32 45 Q55 14 90 12Z" fill="#F29BB8"/>
+      <circle cx="90" cy="88" r="24" fill="#FFF6EC"/>
+      <g stroke-linecap="round" stroke-width="5">
+        <path d="M50 48l9 5" stroke="#fff"/><path d="M118 36l-5 9" stroke="#FFE27A"/><path d="M140 80l-10 3" stroke="#fff"/>
+        <path d="M128 128l-7-7" stroke="#7AC7FF"/><path d="M62 134l5-8" stroke="#FFE27A"/><path d="M36 92l10-2" stroke="#7AC7FF"/>
+      </g>
+    </symbol>
+    <symbol id="macaron" viewBox="0 0 160 120">
+      <path d="M20 55 Q20 15 80 15 Q140 15 140 55Z" fill="#B9A6F2"/>
+      <rect x="18" y="55" width="124" height="16" rx="8" fill="#FFF6EC"/>
+      <path d="M20 72 Q20 108 80 108 Q140 108 140 72Z" fill="#B9A6F2"/>
+      <path d="M30 40 Q50 22 75 24" stroke="#fff" stroke-width="4" opacity=".4" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cake" viewBox="0 0 200 170">
+      <path d="M20 70 L180 70 L180 140 Q100 160 20 140Z" fill="#7A4430"/>
+      <rect x="20" y="96" width="160" height="12" fill="#FFE9C9"/>
+      <path d="M20 70 Q20 48 50 50 Q60 36 90 44 Q120 30 140 46 Q180 40 180 70Z" fill="#4A2C2A"/>
+      <path d="M40 66v22M90 62v28M140 64v20" stroke="#4A2C2A" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="70" cy="34" r="12" fill="#C0392B"/><circle cx="108" cy="30" r="12" fill="#C0392B"/><circle cx="146" cy="36" r="12" fill="#C0392B"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <a class="logo" href="#top"><span>🥐</span> Duja <b>Bakery</b></a>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#story">Our Story</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="btn small" href="#visit">Order now</a>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Freshly baked every morning</p>
+      <h1>Sweet moments, <em>baked with love.</em></h1>
+      <p class="lead">Buttery croissants, dreamy cupcakes and pastel macarons — handmade daily at Duja Bakery from the finest ingredients.</p>
+      <div class="cta">
+        <a class="btn" href="#menu">Explore the menu</a>
+        <a class="btn ghost" href="#visit">Find us</a>
+      </div>
+      <ul class="stats">
+        <li><b>25+</b><span>Sweet treats</span></li>
+        <li><b>4.9★</b><span>Happy guests</span></li>
+        <li><b>6am</b><span>Oven's on</span></li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <div class="blob"></div>
+      <svg class="p p1"><use href="#croissant"/></svg>
+      <svg class="p p2"><use href="#cupcake"/></svg>
+      <svg class="p p3"><use href="#donut"/></svg>
+      <svg class="p p4"><use href="#macaron"/></svg>
+    </div>
+  </section>
+
+  <div class="marquee"><div>
+    <span>Croissants</span><span>✦</span><span>Cupcakes</span><span>✦</span><span>Donuts</span><span>✦</span><span>Macarons</span><span>✦</span><span>Cakes</span><span>✦</span>
+    <span>Croissants</span><span>✦</span><span>Cupcakes</span><span>✦</span><span>Donuts</span><span>✦</span><span>Macarons</span><span>✦</span><span>Cakes</span><span>✦</span>
+  </div></div>
+
+  <!-- MENU -->
+  <section id="menu" class="section">
+    <p class="eyebrow center">Our favourites</p>
+    <h2>Something sweet for everyone</h2>
+    <div class="cards">
+      <article class="card c-peach">
+        <svg><use href="#croissant"/></svg>
+        <h3>Butter Croissant</h3><p>Golden, flaky and baked fresh at dawn.</p><span class="price">$3.50</span>
+      </article>
+      <article class="card c-pink">
+        <svg><use href="#cupcake"/></svg>
+        <h3>Strawberry Cupcake</h3><p>Soft vanilla sponge, creamy pink frosting.</p><span class="price">$4.00</span>
+      </article>
+      <article class="card c-lilac">
+        <svg><use href="#macaron"/></svg>
+        <h3>Lavender Macarons</h3><p>Delicate shells with silky ganache.</p><span class="price">$2.25</span>
+      </article>
+      <article class="card c-choc">
+        <svg><use href="#cake"/></svg>
+        <h3>Chocolate Cake</h3><p>Rich layers topped with fresh cherries.</p><span class="price">$5.75</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="story">
+    <div class="story-art"><svg><use href="#donut"/></svg></div>
+    <div>
+      <p class="eyebrow">Our story</p>
+      <h2>A family recipe, a little extra sugar.</h2>
+      <p>Duja Bakery began in a tiny kitchen with one oven and a big dream: to make every bite feel like a hug. Today we still knead, shape and decorate everything by hand — no shortcuts, only sweetness.</p>
+      <ul class="ticks">
+        <li>Real butter &amp; fresh eggs</li>
+        <li>Baked in small batches</li>
+        <li>Custom cakes for every celebration</li>
+      </ul>
+      <a class="btn" href="#visit">Order a custom cake</a>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section">
+    <p class="eyebrow center">Sweet words</p>
+    <h2>Loved by our neighbours</h2>
+    <div class="quotes">
+      <blockquote>“The best croissant I've ever had. I'm here every Saturday!” <cite>— Lina</cite></blockquote>
+      <blockquote>“Our wedding cake from Duja was perfect and gorgeous.” <cite>— Omar &amp; Sara</cite></blockquote>
+      <blockquote>“Those macarons are pure magic. Cozy place, kind people.” <cite>— Maya</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="visit">
+    <h2>Come say hello 🧁</h2>
+    <p>12 Sugar Lane · Open daily 6:00 am – 9:00 pm</p>
+    <div class="cta center">
+      <a class="btn light" href="tel:+0000000000">Call to order</a>
+      <a class="btn ghost-light" href="mailto:hello@dujabakery.com">hello@dujabakery.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Duja Bakery · Made with butter &amp; love</footer>
+</body>
+</html>
